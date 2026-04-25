@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Timeline · Cinematic Scroll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <section id="hero">
+      <video id="hero-video" autoplay muted loop playsinline>
+        <source src="https://cdn.coverr.co/videos/coverr-stars-in-space-1579/1080p.mp4" type="video/mp4" />
+      </video>
+      <canvas id="stage"></canvas>
+      <div class="vignette"></div>
+      <div class="hud">
+        <p class="tag">SaaS Narrative Demo · Love Timeline</p>
+        <h1 id="phase-title">宇宙</h1>
+        <p id="phase-sub">滚动鼠标，进入情感时间线。</p>
+      </div>
+      <div class="timeline-ui">
+        <div class="timeline-track"><span id="timeline-progress"></span></div>
+        <ul id="milestones"></ul>
+      </div>
+    </section>
+    <section id="scroll-space" aria-hidden="true"></section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
